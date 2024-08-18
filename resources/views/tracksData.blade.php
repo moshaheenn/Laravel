@@ -10,6 +10,7 @@
             <div class="card-header">
                 Tracks List
             </div>
+            <a href="{{ route('tracks.create') }}" class="btn btn-success mb-3">Create New Track</a>
             <div class="card-body">
                 <table class="table">
                     <thead>
@@ -31,6 +32,7 @@
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger">Delete</button>
                                     </form>
+                                    <a href="{{ route('tracks.edit', $track->id) }}" class="btn btn-warning">Update</a>
                                 </td>
                             </tr>
                         @endforeach
@@ -42,3 +44,4 @@
     </div>
 </body>
 </html>
+

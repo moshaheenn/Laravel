@@ -58,5 +58,4 @@ Route::resource('tracks', TrackController::class);
 Route::get('/tracks', [TrackController::class, 'index']);
 Route::get('/tracks/{id}', [TrackController::class, 'show']);
 Route::delete('/tracks/{id}', [TrackController::class, 'destroy']);
-
-
+// Route::resource('tracks', TrackController::class);
